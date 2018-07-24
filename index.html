@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>Portfolio</title>
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+
+	<!-- js script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="assets/js/script-portfolio.js"></script>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alike+Angular|IM+Fell+DW+Pica|Stardos+Stencil" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<div class="container clear">
+		<div class="about">
+
+			<button class="icon"><i class="fas fa-times"></i></button>
+			<img src="assets/images/me.jpg">
+			<div class="myself">
+			<p>I'm dedicated, passionate and hardworking individual. Mechatronics by profession, I've been to variety of manufacturing industries and been handling bigger projects for case conveying and robotic system. When i was coding for machines, I realized I wanted to dig deep in programming. I find it fun and interesting. I wanted to pursue a career in web development and be able maximize my skills and learn more and widen my horizon. I want to continually grow and never stop from there.</p>
+				
+			</div>
+		</div>
+
+		<div class="contact">
+			<button class="icon"><i class="fas fa-times"></i></button>
+
+
+			<div id="contact-form">
+	<div class="title-text">
+		<h2>Hello There</h2> 
+		<h4>Have a question or want to work together? Let's chat.</h4> 
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>  
+		<p id="success">Your message was sent successfully. Thank you!</p>
+
+		   <form method="post">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>  
+			</div>
+			<div>		                  
+		      <label for="message">
+		      	<span class="required">Message: *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >SEND</button> 
+			</div>
+		   </form>
+
+	</div>
+		</div>
+
+		<div class="skills">
+			<button class="icon"><i class="fas fa-times"></i></button>
+
+			<div class="whole">
+				<h2>HTML</h2>
+
+					<div id="myProgress">
+					  <div id="myBar">0%</div>
+					</div>	
+					<br>
+					<button onclick="move()">Show</button> 
+			</div>
+
+					<script>
+					function move() {
+					  var elem = document.getElementById("myBar");   
+					  var width = 9;
+					  var id = setInterval(frame, 9);
+					  function frame() {
+					    if (width >= 85) {
+					      clearInterval(id);
+					    } else {
+					      width++; 
+					      elem.style.width = width + '%'; 
+					      elem.innerHTML = width * 1  + '%';
+					    }
+					  }
+					}
+					</script>
+
+			<div class="whole">
+				<h2>CSS</h2>
+
+					<div id="myProgress2">
+					  <div id="myBar2">0%</div>
+					</div>	
+					<br>
+					<button onclick="move2()">Show</button> 
+			</div>
+
+					<script>
+					function move2() {
+					  var elem = document.getElementById("myBar2");   
+					  var width = 9;
+					  var id = setInterval(frame, 9);
+					  function frame() {
+					    if (width >= 80) {
+					      clearInterval(id);
+					    } else {
+					      width++; 
+					      elem.style.width = width + '%'; 
+					      elem.innerHTML = width * 1  + '%';
+					    }
+					  }
+					}
+					</script>
+
+			<div class="whole">
+				<h2>BOOTSTRAP</h2>
+
+					<div id="myProgress3">
+					  <div id="myBar3">0%</div>
+					</div>	
+					<br>
+					<button onclick="move3()">Show</button> 
+			</div>
+
+					<script>
+					function move3() {
+					  var elem = document.getElementById("myBar3");   
+					  var width = 9;
+					  var id = setInterval(frame, 9);
+					  function frame() {
+					    if (width >= 75) {
+					      clearInterval(id);
+					    } else {
+					      width++; 
+					      elem.style.width = width + '%'; 
+					      elem.innerHTML = width * 1  + '%';
+					    }
+					  }
+					}
+					</script>
+
+
+			<div class="whole">
+				<h2>JAVASCRIPT</h2>
+
+					<div id="myProgress4">
+					  <div id="myBar4">0%</div>
+					</div>	
+					<br>
+					<button onclick="move4()">Show</button> 
+			</div>
+
+					<script>
+					function move4() {
+					  var elem = document.getElementById("myBar4");   
+					  var width = 9;
+					  var id = setInterval(frame, 9);
+					  function frame() {
+					    if (width >= 20) {
+					      clearInterval(id);
+					    } else {
+					      width++; 
+					      elem.style.width = width + '%'; 
+					      elem.innerHTML = width * 1  + '%';
+					    }
+					  }
+					}
+					</script>
+
+
+		</div> <!-- end of skills -->
+
+		<div class="works">
+			<button class="icon"><i class="fas fa-times"></i></button>
+
+				<div class="grid">
+					<figure class="effect-jazz">
+						<img src="assets/images/caps.jpg" alt="img25"/>
+						<figcaption>
+							<h2>Capstone <span>One</span></h2>
+							<p>Check out the webpage for every travel enthusiasts out there</p>
+							<a href="https://michellebernadas.github.io/Capstone1/" target="_blank">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-jazz">
+						<img src="assets/images/caps2.jpg" alt="img06"/>
+						<figcaption>
+							<h2>Capstone <span>Two</span></h2>
+							<p>Coming Soon.</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+		</div>
+
+
+		<div class="header">
+			<div class="header-text">
+				<h3 class="left" ><a href="#">About</a></h3>
+				<h3 class="right"><a href="#">Contact </a></h3>
+				<!-- <h3 class="center"><a href="#">Works</a></h3> -->
+			</div>
+		</div> <!-- end of header -->
+		<div class="body-div animated fadeInUp">
+			<img src="assets/images/logo2.jpg">
+
+			
+		</div>	
+		<div class="footer">
+			<div class="footer-text">
+				<h3 class="left"><a href="#">Skills</a></h3>
+				<h3 class="right"><a href="#">Works</a></h3>
+			</div>
+		</div>
+	</div> <!-- end of container -->
+</body>
+</html>
